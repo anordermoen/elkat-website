@@ -25,8 +25,8 @@ export default function Home() {
             <span className="text-gray-400">workforce</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            Specialized in electrical work. Creating a place where it's easy to
-            be both a customer and an employee.
+            Specialized in electrical work. Creating a place where it&apos;s
+            easy to be both a customer and an employee.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" variant="secondary">
