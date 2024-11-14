@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Lightbulb, Target, Shield, Users, Star, Heart } from "lucide-react";
+import { Lightbulb, Target, Shield, Star, Heart } from "lucide-react";
 import Image from "next/image";
 
 export default function Organization() {
