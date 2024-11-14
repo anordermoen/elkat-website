@@ -71,7 +71,7 @@ export default function Home() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 group-hover:text-white/90 transition-colors">
+                <p className="text-gray-300 group-hover:text-white/90 transition-colors">
                   Specialized electrical workforce for industrial projects and
                   maintenance
                 </p>
@@ -88,7 +88,7 @@ export default function Home() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 group-hover:text-white/90 transition-colors">
+                <p className="text-gray-300 group-hover:text-white/90 transition-colors">
                   Expert electricians for data center installations
                 </p>
               </CardContent>
@@ -104,7 +104,7 @@ export default function Home() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 group-hover:text-white/90 transition-colors">
+                <p className="text-gray-300 group-hover:text-white/90 transition-colors">
                   Skilled electrical workers for construction projects
                 </p>
               </CardContent>
