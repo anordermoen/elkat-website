@@ -41,7 +41,7 @@ export default function Home() {
               variant="outline"
               className="border-white text-white hover:text-gray-900 hover:bg-white"
             >
-              <Link href="/services">Job application</Link>
+              <Link href="/contact">Job application</Link>
             </Button>
           </div>
         </div>
