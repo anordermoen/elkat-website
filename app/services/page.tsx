@@ -11,7 +11,6 @@ import {
   Users,
   Shield,
 } from "lucide-react";
-import Image from "next/image";
 import { useRef } from "react";
 
 export default function Services() {
