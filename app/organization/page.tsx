@@ -5,18 +5,21 @@ import Image from "next/image";
 export default function Organization() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Our Organization
-            </h1>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Building the future of electrical workforce solutions with
-              expertise, innovation, and dedication to excellence.
-            </p>
-          </div>
+      {/* Hero Section with Background Image */}
+      <section
+        className="relative h-screen flex items-center bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: "url('/office-logo-elkat.png')" }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        {/* Overlay for better text visibility */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            Our Organization
+          </h1>
+          <p className="text-xl mt-4">
+            Building the future of electrical workforce solutions with
+            expertise, innovation, and dedication to excellence.
+          </p>
         </div>
       </section>
 

@@ -1,10 +1,21 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Power, Building, Database } from "lucide-react";
+import { ArrowRight, Power, Building, Database, ArrowDown } from "lucide-react";
+import { useRef } from "react";
 
 export default function Home() {
+  const servicesRef = useRef<HTMLElement>(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -30,7 +41,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" variant="secondary">
-              <Link href="/contact" className="inline-flex items-center">
+              <Link href="/services" className="inline-flex items-center">
                 Our Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -45,10 +56,20 @@ export default function Home() {
             </Button>
           </div>
         </div>
+        {/* Floating Arrow */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+          <Button
+            onClick={scrollToServices}
+            variant="ghost"
+            className="h-10 w-10 rounded-full bg-white text-gray-900"
+          >
+            <ArrowDown className="h-5 w-5" />
+          </Button>
+        </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-gray-50">
+      <section ref={servicesRef} className="py-24 bg-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
